@@ -1,0 +1,28 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Present Simple",
+      "description": "Used for habits and general truths.",
+      "examples": [
+        "I eat breakfast at 7 AM.",
+        "She works in a hospital."
+      ],
+      "exercises": [
+        {
+          "question": "Complete: He ___ (play) football every weekend.",
+          "answer": "plays"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Past Continuous",
+      "description": "Used for ongoing actions in the past.",
+      "examples": [
+        "I was reading when you called.",
+        "They were sleeping at midnight."
+      ]
+    }
+  ]
+}
