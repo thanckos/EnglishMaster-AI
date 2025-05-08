@@ -1,0 +1,10 @@
+{
+  "title": "Airport Check-In",
+  "phrases": [
+    {
+      "role": "Officer",
+      "text": "Passport and boarding pass, please.",
+      "expected_responses": ["Here you go", "I can't find my boarding pass..."]
+    }
+  ]
+}
