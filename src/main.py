@@ -5,6 +5,35 @@ from PyQt6.QtCore import Qt
 from llama_cpp import Llama
 import pyttsx3
 
+from PyQt6.QtWidgets import QListWidget  # Ajoutez en haut du fichier
+
+class EnglishMasterApp(QMainWindow):
+    def __init__(self):
+        # ... (code existant)
+        self.add_grammar_ui()  # Nouvelle méthode
+
+    def add_grammar_ui(self):
+        self.grammar_list = QListWidget()
+        lessons = load_grammar_lessons()
+        for lesson in lessons["tenses"]["lessons"]:
+            self.grammar_list.addItem(lesson["title"])
+        
+        self.grammar_list.itemClicked.connect(self.show_grammar_lesson)
+        
+        # Ajoutez à votre layout existant
+        layout.addWidget(QLabel("📚 Grammaire"))
+        layout.addWidget(self.grammar_list)
+
+    def show_grammar_lesson(self, item):
+        lesson_title = item.text()
+        lessons = load_grammar_lessons()
+        for lesson in lessons["tenses"]["lessons"]:
+            if lesson["title"] == lesson_title:
+                self.chat_display.append(f"📖 {lesson['title']}: {lesson['description']}")
+                for example in lesson["examples"]:
+                    self.chat_display.append(f"→ {example}")
+                break
+
 class EnglishMasterApp(QMainWindow):
     def __init__(self):
         super().__init__()
