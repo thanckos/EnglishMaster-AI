@@ -1,0 +1,21 @@
+{
+  "title": "At the Restaurant",
+  "description": "Order food and interact with the waiter.",
+  "phrases": [
+    {
+      "role": "Waiter",
+      "text": "Good evening! Do you have a reservation?",
+      "audio": "restaurant_waiter_1.wav"  // Optionnel (synthèse vocale)
+    },
+    {
+      "role": "User",
+      "prompt": "Respond: Yes, under the name...",
+      "expected_responses": ["Smith", "Johnson"]
+    },
+    {
+      "role": "Waiter",
+      "text": "Follow me, please. Here's the menu.",
+      "audio": "restaurant_waiter_2.wav"
+    }
+  ]
+}
