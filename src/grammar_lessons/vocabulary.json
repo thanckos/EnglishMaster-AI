@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {
+      "name": "Food",
+      "words": ["apple", "banana", "restaurant", "menu"],
+      "phrases": [
+        "I would like to order...",
+        "How much does this cost?"
+      ]
+    },
+    {
+      "name": "Travel",
+      "words": ["airport", "ticket", "passport"],
+      "phrases": [
+        "Where is the nearest hotel?",
+        "I need a taxi."
+      ]
+    }
+  ]
+}
